@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <!-- 🎙️ أيقونة التطبيق -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎙️"
+        android:textSize="64sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 📛 عنوان التطبيق -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مسجل المكالمات"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1A1A2E"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- 📝 وصف -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="التسجيل التلقائي للمكالمات"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- ✅ حالة التطبيق -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⏳ جاري التحقق من الصلاحيات..."
+        android:textSize="16sp"
+        android:textColor="#FF6F00"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#FFF3E0"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 📁 عدد التسجيلات -->
+    <TextView
+        android:id="@+id/recordingsCountText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📁 جاري التحميل..."
+        android:textSize="16sp"
+        android:textColor="#1565C0"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#E3F2FD"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 🔐 زر الصلاحيات -->
+    <Button
+        android:id="@+id/checkPermissionsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔐 طلب الصلاحيات"
+        android:textSize="16sp"
+        android:padding="14dp"
+        android:backgroundTint="#1A1A2E"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- 📂 زر التسجيلات -->
+    <Button
+        android:id="@+id/viewRecordingsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📂 تحديث عدد التسجيلات"
+        android:textSize="16sp"
+        android:padding="14dp"
+        android:backgroundTint="#37474F"/>
+
+</LinearLayout>
